@@ -27,12 +27,52 @@ body{
 }
 .button{
   background-color: blueviolet;
-  height: 100%;
-  margin: 0;
+ 
+  margin:5px;
   padding: 0;
   display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+  
 }
-.row5{
+
+.continer{
+  width: 75%;
+  height: 80%;
+ display: flex;
+ flex-direction: column;
+ margin: 0;
+ padding: 0;
+}
+.continer2{ 
+  width: 25%;
+  height: 80%;
   display: flex;
-  flex-direction: column;
+  flex-direction:row;
+  flex-wrap: wrap;
+  margin: 0;
+ padding: 0;
 }
+.continer3{
+  display: flex;
+  width: 100%;
+  
+  margin: 0;
+ padding: 0;
+}
+.row5
+{
+  display: flex;
+}
+button
+{
+ flex: 1 1 100%;
+}
+.continer div{
+ display: flex;
+ height: 25%;
+}
+.continer2 :last-child{
+  height: 50% ;
+}
+
