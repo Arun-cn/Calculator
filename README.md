@@ -1,1 +1,3 @@
-Calculator using java script and html css
+java script and html css
+
+In this reposetory buliding applications using html javascript and css
