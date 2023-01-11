@@ -42,3 +42,7 @@ function eqal(){
     let sum =eval(inputValue);
     document.getElementById("textview").innerHTML=sum;
 }
+
+function clearDisplay(){
+  document.getElementById("textview").innerHTML="0";
+}
