@@ -46,3 +46,16 @@ function eqal(){
 function clearDisplay(){
   document.getElementById("textview").innerHTML="0";
 }
+
+function backSpace(){
+  
+     displayText = document.getElementById("textview").innerHTML;
+  console.log("presing back space"+displayText.length)
+  if (displayText.length ==1){
+    document.getElementById("textview").innerHTML = 0;
+      console.log(displayText)
+  }else{
+    document.getElementById("textview").innerHTML = displayText.slice(0,-1);
+    console.log(displayText)
+  }
+}
