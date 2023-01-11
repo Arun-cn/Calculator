@@ -1,16 +1,39 @@
-let value =0
+let displayText =0  // display text value 
+
 
 function input(vale){
-   let button = document.getElementById("textview").innerHTML;
-    if(vale == 0){
-        button == '0';
-        
+  displayText = document.getElementById("textview").innerHTML;
+   
+   switch (vale) {
+       case "0": 
+       if(displayText ==0){
+        displayText =0;
+       }else{
+        displayText += vale;
+       }
+       break;
 
+       case ".":
+         if( displayText.includes(".")  ){
+            displayText = displayText;
+         }else{
+            if(displayText ==0){
+                displayText=vale;
+            }else{
+            displayText +=vale
+            }
+         }
+        break;
 
-    }else{
-        button = value + vale;
-    }
-
+       default:
+        if(displayText ==0){
+            displayText=vale;
+        }else{
+        displayText +=vale
+        }
+   }
+           
+  document.getElementById("textview").innerHTML=displayText
    
 }
 
