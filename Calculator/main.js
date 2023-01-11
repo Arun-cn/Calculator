@@ -33,10 +33,12 @@ function input(vale){
         }
    }
            
-  document.getElementById("textview").innerHTML=displayText
+  document.getElementById("textview").innerHTML=displayText;
    
 }
 
-function eqal (){
-    
+function eqal(){
+    let inputValue = document.getElementById("textview").innerHTML;
+    let sum =eval(inputValue);
+    document.getElementById("textview").innerHTML=sum;
 }
