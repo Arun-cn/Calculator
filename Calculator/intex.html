@@ -17,9 +17,9 @@
     <div class="button">
         <div class="continer">
             <div class="row">
-                    <button>c</button>
-                    <button>&gt;</button>
-                    <button>/</button>
+                    <button onclick="clear()">c</button>
+                    <button onclick="backSpace()">&gt;</button>
+                    <button onclick="input('/')">/</button>
                 </div>
                    
             <div class="row2">
@@ -42,7 +42,7 @@
             </div>
         <div class="continer2">
             
-                <button >*</button>
+                <button onclick="input('*')">*</button>
                 <button onclick="input('-')">-</button>
                 <button class="buttonplus" onclick="input('+')">+</button>
 
@@ -50,10 +50,10 @@
                 </div>
         <div class="continer3">
                
-                    <button class="buttoneq">=</button>
+                    <button class="buttoneq" onclick="sum()">=</button>
                 
                     <button onclick="input('0')">0</button>
-                    <button>.</button>
+                    <button onclick="input('.')">.</button>
                
 
             </div>
