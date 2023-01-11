@@ -10,7 +10,9 @@
 <body>
     <div class="calculator">
         <div class="display">
-
+        <div class="displaycontiner">
+            <b id="textview">0</b>
+        </div>
         </div>
     <div class="button">
         <div class="continer">
@@ -21,28 +23,28 @@
                 </div>
                    
             <div class="row2">
-                    <button>7</button>
-                    <button>8</button>
-                    <button>9</button>
+                    <button onclick="input('7')">7</button>
+                    <button onclick="input('8')">8</button>
+                    <button onclick="input('9')">9</button>
                 </div>
                   
             <div class="row3">
-                    <button>4</button>
-                    <button>5</button>
-                    <button>6</button>
+                    <button onclick="input('4')">4</button>
+                    <button onclick="input('5')">5</button>
+                    <button onclick="input('6')">6</button>
                 </div>
                    
             <div class="row4">
-                    <button>1</button>
-                    <button>2</button>
-                    <button>3</button>
+                    <button onclick="input('1')">1</button>
+                    <button onclick="input('2')">2</button>
+                    <button onclick="input('3')">3</button>
                 </div> 
             </div>
         <div class="continer2">
             
                 <button >*</button>
-                <button>-</button>
-                <button class="buttonplus">+</button>
+                <button onclick="input('-')">-</button>
+                <button class="buttonplus" onclick="input('+')">+</button>
 
             
                 </div>
@@ -50,7 +52,7 @@
                
                     <button class="buttoneq">=</button>
                 
-                    <button>0</button>
+                    <button onclick="input('0')">0</button>
                     <button>.</button>
                
 
@@ -60,5 +62,7 @@
         </div>
 
     </div>
+        <script src="main.js"  ></script>
+
 </body>
 </html>

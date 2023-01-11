@@ -26,6 +26,11 @@ border-radius: 10px;
  margin: 10px 10px;
 
 }
+.displaycontiner{
+  background-color: gainsboro;
+  width: 100%;
+  height: 100%;
+}
 .button{
   height: 80%;
   box-sizing: border-box;
